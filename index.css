@@ -1,0 +1,144 @@
+#body {
+    background-color: darkslategray;
+}
+
+.js-clock{
+    top: 0px;
+    color: white;
+    text-align: center;
+    font-size: 50pt;
+    font-family: 'Staatliches', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#input {
+    font-size: 50pt;
+}
+
+.dis-div,
+.form,
+.greetings{
+    display: none;
+    font-family: 'Staatliches', cursive;
+}
+
+.showing {
+    display: block;
+    text-align: center;
+    font-size: 30pt;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.js-toDoForm,
+.js-toDoList,
+.weather {
+    text-align: center;
+    color: white;
+    font-size: 15pt;
+    font-family: "Jua", sans-serif;
+    animation: fadeIn 3s linear;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.weather {
+    position: fixed;
+    top: 600px;
+    text-align: left;
+}
+
+.on-progress {
+    color: yellow;
+    transition: 0.5s ease-in-out color;
+}
+
+#li{
+    transition: 0.5s ease-in-out;  
+    text-shadow: 2px 2px 4px #000000;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+  .bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 3s linear;
+  }
+
+button,
+input {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2pt solid white;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    color: white;
+}
+
+.quote{
+    font-family: 'Staatliches', cursive;
+    animation: fadeIn 3s linear;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 15pt;
+    color: white;
+    text-align: right;
+    position: fixed;
+    top: 600px;
+    right: 20px;
+    bottom: 25px;
+}
+
+.setting{
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 20pt;
+}
+
+.setting-div{
+    width: 500px;
+    height: 100px;
+    background-color: #00000077;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 2px 2px 4px #000000;
+    animation: fadeIn 1.5s linear;
+    font-size: 30pt;
+    font-family: 'Staatliches', cursive;
+    color: white;
+}
+
+.full-window {
+    top: 700px
+}
+
+.weather {
+    font-family: 'Staatliches', cursive;
+}
