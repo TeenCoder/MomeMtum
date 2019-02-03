@@ -1,12 +1,19 @@
-/*
-
 const toDoForm = document.querySelector(".js-toDoForm"),
     toDoInput = toDoForm.querySelector("input"),
     toDoList = document.querySelector(".js-toDoList");
 
+const toDoDiv = document.querySelector(".todo-div"),
+    toDoBt = document.querySelector(".todo-button");
+
 const TODO_LS = "toDos";
 
 let toDos = [];
+
+function handleToDoBtClick(){
+    toDoDiv.classList.toggle("dis-div");
+}
+
+
 
 function deleteToDo(event) {
     const btn = event.target;
@@ -82,8 +89,8 @@ function loadToDos() {
 function init() {
     loadToDos();
     toDoForm.addEventListener("submit", handleSubmit);
+    toDoBt.addEventListener("click", handleToDoBtClick);
 }
 
 init();
 
-*/

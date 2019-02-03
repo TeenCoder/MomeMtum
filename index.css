@@ -30,8 +30,6 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
-.js-toDoForm,
-.js-toDoList,
 .weather {
     text-align: center;
     color: white;
@@ -141,4 +139,42 @@ input {
 
 .weather {
     font-family: 'Staatliches', cursive;
+}
+
+.todo-button {
+    width: 100px;
+    height: 50px;
+    top: 0px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 20pt;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.todo-div{
+    width: 500px;
+    height: 100px;
+    background-color: #00000077;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 2px 2px 4px #000000;
+    animation: fadeIn 1.5s linear;
+    font-size: 30pt;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    right: 50px;
+}
+
+.js-toDoForm {
+    font-family: 'Staatliches', cursive;
+    animation: fadeIn 3s linear;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 25pt;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    right: 10px;
 }
