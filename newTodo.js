@@ -10,6 +10,7 @@ const TODO_LS = "toDos";
 let toDos = [];
 
 function handleToDoBtClick(){
+    console.log("clicked")
     toDoDiv.classList.toggle("dis-div");
 }
 
