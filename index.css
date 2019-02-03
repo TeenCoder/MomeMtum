@@ -155,7 +155,7 @@ input {
 
 .todo-div{
     width: 500px;
-    height: 100px;
+    height: 500px;
     background-color: #00000077;
     position: fixed;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -164,7 +164,7 @@ input {
     font-size: 30pt;
     font-family: 'Staatliches', cursive;
     color: white;
-    right: 50px;
+    right: 0px;
 }
 
 .js-toDoForm {
@@ -175,6 +175,6 @@ input {
     color: white;
     text-align: center;
     position: fixed;
-    top: 100px;
+    top: 75px;
     right: 10px;
 }

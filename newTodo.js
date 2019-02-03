@@ -14,7 +14,6 @@ function handleToDoBtClick(){
 }
 
 
-
 function deleteToDo(event) {
     const btn = event.target;
     const li = btn.parentNode;
@@ -93,4 +92,3 @@ function init() {
 }
 
 init();
-
