@@ -50,11 +50,6 @@
     transition: 0.5s ease-in-out color;
 }
 
-#li{
-    transition: 0.5s ease-in-out;  
-    text-shadow: 2px 2px 4px #000000;
-}
-
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -186,4 +181,12 @@ input {
     text-align: right;
     font-size: 30pt;
     font-family: "Jua", sans-serif;
+}
+
+#li{
+    transition: 0.5s ease-in-out;  
+    text-shadow: 2px 2px 4px #000000;
+    text-align: right;
+    right: 10px;
+    left: 100px
 }
