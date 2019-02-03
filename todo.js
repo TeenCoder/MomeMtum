@@ -1,4 +1,3 @@
-/*
 
 const toDoForm = document.querySelector(".js-toDoForm"),
     toDoInput = toDoForm.querySelector("input"),
@@ -86,4 +85,3 @@ function init() {
 
 init();
 
-*/

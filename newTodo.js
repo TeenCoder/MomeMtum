@@ -1,6 +1,7 @@
 const toDoForm = document.querySelector(".js-toDoForm"),
     toDoInput = toDoForm.querySelector("input"),
-    toDoList = document.querySelector(".js-toDoList");
+    toDoList = document.querySelector(".js-toDoList"),
+    toDoUl = document.querySelector("ul");
 
 const toDoDiv = document.querySelector(".todo-div"),
     toDoBt = document.querySelector(".todo-button");
@@ -10,10 +11,10 @@ const TODO_LS = "toDos";
 let toDos = [];
 
 function handleToDoBtClick(){
-    console.log("clicked")
+    console.log("clicked");
     toDoDiv.classList.toggle("dis-div");
+    toDoList.classList.toggle("dis-div")
 }
-
 
 function deleteToDo(event) {
     const btn = event.target;
@@ -47,12 +48,11 @@ function paintToDo(text) {
     prgsBtn.innerText = "➡"
     delBtn.addEventListener("click", deleteToDo);
     prgsBtn.addEventListener("click", prgsBtnHandle);
-    span.innerText = `${text}  `
+    span.innerText = `${text}    `
     li.appendChild(span);
     li.appendChild(delBtn);
     li.appendChild(prgsBtn);
     li.id = newId;
-    toDoDiv.appendChild(li);
     toDoList.appendChild(li)
     const toDoObj = {
         text: text,
@@ -65,8 +65,8 @@ function paintToDo(text) {
 
 function handleSubmit(event) {
     event.preventDefault();
-    console.log(toDos.length)
-    if (toDos.length > 3){
+    console.log(toDos.length);
+    if (toDos.length > 7){
         alert("Todolist Overloaded!");
         toDoInput.value = "";
         toDoInput.placeholder = "todolist overloaded";
@@ -75,7 +75,7 @@ function handleSubmit(event) {
         paintToDo(currentValue);
         toDoInput.value = "";
     }
-}
+};
 
 function loadToDos() {
     const loadedToDos = localStorage.getItem(TODO_LS);
@@ -84,7 +84,7 @@ function loadToDos() {
         parsedToDos.forEach(function (toDo) {
             paintToDo(toDo.text);
         });
-    }
+    };
 }
 
 function init() {
