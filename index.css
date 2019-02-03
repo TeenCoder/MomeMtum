@@ -178,3 +178,7 @@ input {
     top: 75px;
     right: 10px;
 }
+
+.toDo-input {
+    right: 175px;
+}
